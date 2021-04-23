@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="JavaS/java.js">
+   <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+   <title>Morning Message</title>
+ </head>
+ <body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Welcome to my Website!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">Hello</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Insert Text</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+ </nav>
+
+ <div class="time"><a href="#contact">
+  <img id="clock" src="Img/Glacieralaska.jpg">
+  <div id="open_close"></div></a>
+ </div>
+
+ <script type="text/javascript">
+ document.write("<p>");
+ var day = new Date();
+ var hr = day.getHours();
+ if (hr == 1) {
+  document.write("Good morning! 1AM and still your going! ");
+ }
+ if (hr == 2) {
+  document.write("Hey, it is past 2AM! The bars must be closed!");
+ }
+ if (hr == 3) {
+  document.write("Hey, it is after 3AM! Are you a vampire or what?");
+ }
+ if (hr == 4) {
+  document.write("4AM? You must roam all night huh!");
+ }
+ if (hr == 5) {
+  document.write("Whoa! It's almost daylight and your still going!");
+ }
+ if (hr == 6) {
+  document.write("Hey, isn't it too early to be using your computer");
+ }
+ if ((hr == 6) || (hr == 7) || (hr == 8) || (hr == 9) || (hr == 10)) {
+  document.write("Good Morning!");
+ }
+ if (hr == 11) {
+  document.write("11AM... Is it time for lunch yet?");
+ }
+ if (hr == 12) {
+  document.write("NOON! Great, it must be time for lunch!");
+ }
+ if (hr == 14) {
+  document.write("It's 2PM. Have you eaten lunch yet?");
+ }
+ if ((hr == 15) || (hr == 16) || (hr == 13)) {
+  document.write("Good Afternoon!");
+ }
+ if ((hr == 17) || (hr == 18) || (hr == 19) || (hr == 20) || (hr == 21) || (hr == 22)) {
+  document.write("Good Evening! Welcome to prime time on the web!");
+ }
+ if (hr == 23) {
+  document.write("It's almost midnight...Aren't you sleepy yet?");
+ }
+ if (hr==0) {
+  document.write("It's midnight... do you ever sleep?");
+ }
+ document.write("</p>");
+ </script>
+
+</body>
